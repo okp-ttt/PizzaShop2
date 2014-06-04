@@ -19,7 +19,11 @@
             } else {
                 for (var i = 0;i < json.length;i++){
                     res += '<tr><td><a href="javascript:return false;" onclick="getData(' + json[i].id +');">' + json[i].id + '</a></td>';
-                    res += '<td> + json[i].kind + json[i].size + json[i].number + json[i].name + json[i].address +'</td>' +
+                    res += '<td>' + json[i].kind + '</td>' +
+                    	'<td>' + json[i].size + '</td>' +
+                    	'<td>' + json[i].number + '</td>' +
+                    	'<td>' + json[i].name + '</td>' +
+                    	'<td>' + json[i].address +'</td>' +
                     	'<td><a href="del.html?id=' + json[i].id + '">削除</td></tr>';
                 }
             }

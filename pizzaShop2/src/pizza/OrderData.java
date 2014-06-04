@@ -84,7 +84,7 @@ public class OrderData {
     }
  
     public void setAddress(String address) {
-        this.name = name;
+        this.address = address;
     }
     
     public Date getDatetime() {
